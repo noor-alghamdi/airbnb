@@ -20,5 +20,17 @@
     text-transform: inherit;
     margin-top: 20px;
     font-weight: 600;
+    border: #ff7779;
 
+}
+.banner--info > button:hover {
+    background-color: white;
+    color: #ff7779;
+    border: #ff7779;
+
+    
+
+}
+.banner--info > h5 {
+    margin-top: 10px;
 }
