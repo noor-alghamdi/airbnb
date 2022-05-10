@@ -4,6 +4,17 @@
     height: 70vh;
     background-size: cover; 
 }
+.banner--explore--btn {
+    font-weight: 900 !important;
+    background-color: white !important;
+    text-transform: inherit !important;
+    color: #ff7779 !important;
+    border-color: #ff7779 !important;
+}
+.banner--search{
+    display: flex;
+    flex-direction: column;
+}
 .banner--info{
     background-color: black;
     color: white;
@@ -20,13 +31,13 @@
     text-transform: inherit;
     margin-top: 20px;
     font-weight: 600;
-    border: #ff7779;
+    border-color: #ff7779;
 
 }
 .banner--info > button:hover {
     background-color: white;
     color: #ff7779;
-    border: #ff7779;
+    border-color: #ff7779;
 
     
 
