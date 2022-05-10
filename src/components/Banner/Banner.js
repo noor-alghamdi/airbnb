@@ -5,11 +5,11 @@ import Button from '@mui/material/Button';
 import Search from '../Search/Search'
 
 function Banner() {
-    const [showSearch, setShowSearch] = useState (false);
-    return (
+    const [showSearch, setShowSearch] = useState(false);
+        return (
         <div className='banner'>
         <div className='banner--search'>
-        {showSearch && <Search/>}
+        {showSearch && <Search />}
             <Button 
             onClick ={()=> setShowSearch(!showSearch)}
             variant="outlined"

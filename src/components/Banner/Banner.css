@@ -37,10 +37,7 @@
 .banner--info > button:hover {
     background-color: white;
     color: #ff7779;
-    border-color: #ff7779;
-
-    
-
+    border-color: #ff7779;   
 }
 .banner--info > h5 {
     margin-top: 10px;
