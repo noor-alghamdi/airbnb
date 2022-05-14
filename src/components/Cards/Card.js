@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Cards/Cards.css'
+import '../Cards/Card.css'
 
 function Card({ src, title, description, price }) {
     return (
@@ -13,4 +13,4 @@ function Card({ src, title, description, price }) {
         </div>
     )
 }
-export default Cards
+export default Card

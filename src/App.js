@@ -4,7 +4,6 @@ import Header from './components/Header/Header'
 // import Banner from './components/Banner/Banner'
 import Search from './components/Search/Search'
 import SearchPage from './components/SearchPage/SearchPage'
-import Cards from './components/Cards/Cards'
 import Footer from './components/Footer/Footer';
 
 
@@ -18,7 +17,7 @@ function App() {
     <Home />
     {/* <Search /> */}
     {/* <Banner /> */}
-    <Cards />
+    {/* <Cards /> */}
     <Footer />
     <SearchPage />
       {/* Home */}
