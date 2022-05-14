@@ -5,6 +5,7 @@ import Header from './components/Header/Header'
 import Search from './components/Search/Search'
 import SearchPage from './components/SearchPage/SearchPage'
 import Footer from './components/Footer/Footer';
+import {BrowserRouter as Router, Switch, Rout} from 'react-router-dom'
 
 
 
@@ -13,21 +14,23 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div className="App">
-    <Header />
-    <Home />
-    {/* <Search /> */}
-    {/* <Banner /> */}
-    {/* <Cards /> */}
-    <Footer />
-    <SearchPage />
-      {/* Home */}
-        {/* Header */}
-          {/* Search */}
-        {/* Banner */}
-        {/* Cards */}
-        {/* Footer */}
+    <Router>
 
-      {/* Search Page */}
+    <Header />
+    <Switch>
+    <Rout path="/">
+    <Home />
+    </Rout>
+    <Rout path="search">
+    <SearchPage />
+    </Rout>
+    </Switch>
+
+
+    <Footer />
+    
+    
+    </Router>
 
     </div>
   );
