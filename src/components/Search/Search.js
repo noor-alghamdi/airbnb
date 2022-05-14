@@ -11,35 +11,27 @@ import Button from '@mui/material/Button';
 
 
 function Search() {
-    const[startDate, setStartDate] = useState(new Date());
-    const[endDate, setEndDate] = useState(new Date());
-    
+    const [startDate, setStartDate] = useState(new Date());
+    const [endDate, setEndDate] = useState(new Date());
 
     const selectionRange = {
-          startDate: new Date(),
-          endDate: new Date(),
-          key: 'selection',  
-        }
-        // endDate.setDate(endDate.getDate() + 1);
+        startDate: startDate,
+        endDate: endDate,
+        key: "selection",
+      };
 
-        function handleSelect(ranges){
-            setStartDate(ranges.selection.startDate)
-            setEndDate(ranges.selection.endDate)
-        }  
-        
+    function handleSelect(ranges) {
+        setStartDate(ranges.selection.startDate);
+        setEndDate(ranges.selection.endDate);
+    }
+
     return (
         <div className='search'>
-        <DateRangePicker
-        ranges={[selectionRange]}
-        onChange={handleSelect}/> 
-        <h1> Number of Guests
-        <EmojiPeopleOutlinedIcon/>
-        </h1>
-        <input 
-            min = {0}
-            defaultValue = {2}
-            type = "number"
-        />
+            <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
+            <h2>
+                Number of guests <EmojiPeopleOutlinedIcon />
+            </h2>
+            <input min={0} defaultValue={2} type="number" />
         <Button> Search Airbnb</Button>
 
         </div>

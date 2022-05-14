@@ -1,13 +1,16 @@
 import React from 'react'
 import '../Cards/Cards.css'
 
-function Cards() {
+function Card({ src, title, description, price }) {
     return (
-        <div>
-        <h1> I am cards</h1>
-            
+        <div className='card'>
+            <img src={src} alt="" />
+            <div className="card--details">
+                <h2>{title}</h2>
+                <h4>{description}</h4>
+                <h3>{price}</h3>
+            </div>
         </div>
     )
 }
-
 export default Cards
