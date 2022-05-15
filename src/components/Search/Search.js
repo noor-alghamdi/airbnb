@@ -6,11 +6,17 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 import { useState } from "react";
 import EmojiPeopleOutlinedIcon from '@mui/icons-material/EmojiPeopleOutlined';
 import Button from '@mui/material/Button';
+import {useNavigate} from 'react-router-dom'
+
 
 
 
 
 function Search() {
+    const navigate = useNavigate();
+    function navigateLink() {
+        navigate('/search')
+    }
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
 
@@ -32,7 +38,7 @@ function Search() {
                 Number of guests <EmojiPeopleOutlinedIcon />
             </h2>
             <input min={0} defaultValue={2} type="number" />
-        <Button> Search Airbnb</Button>
+        <Button onClick={navigateLink}> Search Airbnb</Button>
 
         </div>
     )

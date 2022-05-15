@@ -1,5 +1,5 @@
 .banner{
-    background-image: url(/Users/namacocnut/apps/airbnb-clone/src/images/hero.png);
+    background-image: url(../../images/hero.png);
     position: relative;
     height: 70vh;
     background-size: cover; 
