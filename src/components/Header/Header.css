@@ -1,39 +1,38 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color:white;
-    z-index: 100;
-    width: 100%;
+  display: grid;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+  grid-template-columns: 1fr;
+  justify-content: space-evenly;
 }
-.header--icon{
-    object-fit: contain;
-    height: 100px;
-    margin-left: 20px;
+@media screen and (min-width: 600px) {
+  .header {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem));
+  }
 }
-.header--center{
-    display: flex;
-    align-items: center;
-    flex: 1;
-    padding: 10px;
-    height: 30px;
-    border: 1px solid lightgrey;
-    max-width: fit-content;
-    border-radius: 999px;
+.header--icon {
+  object-fit: contain;
+  height: 100px;
+  z-index: 100;
+  width: 100%;
+  grid-template-columns: 1fr;
 }
-.header--center > input{
-  border: none;
-  width: 250px;
-  outline-width: 0;
-  width: 250px;
+.header--center {
+  display: grid;
+  align-items: center;
+  flex: 1;
+  padding: 10px;
+  height: 30px;
+  border: 1px solid lightgrey;
+  border-radius: 999px;
+  grid-template-columns: 1fr;
 }
-.header--right{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 15vw;
-    margin-right: 80px;
-    
+@media screen and (min-width: 600px) {
+  .header--center {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem));
+  }
 }

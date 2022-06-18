@@ -1,44 +1,53 @@
-.banner{
-    background-image: url(../../images/hero.png);
-    position: relative;
-    height: 70vh;
-    background-size: cover; 
+.banner {
+  background-image: url(../../images/hero.png);
+  position: relative;
+  height: 70vh;
+  background-size: cover;
+}
+@media screen and (min-width: 600px) {
+  .banner {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem));
+  }
 }
 .banner--explore--btn {
-    font-weight: 900 !important;
-    background-color: white !important;
-    text-transform: inherit !important;
-    color: #ff7779 !important;
-    border-color: #ff7779 !important;
+  font-weight: 900 !important;
+  background-color: white !important;
+  text-transform: inherit !important;
+  color: #ff7779 !important;
+  border-color: #ff7779 !important;
+  width: 100%;
 }
-.banner--search{
-    display: flex;
-    flex-direction: column;
+.banner--search {
+  display: flex;
+  flex-direction: column;
 }
-.banner--info{
-    background-color: black;
-    color: white;
-    padding-top: 25vh;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-bottom: 40px;
-    width: 300px;
-
+.banner--info {
+  background-color: black;
+  color: white;
+  padding-top: 25vh;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 40px;
+  width: 300px;
+}
+@media screen and (min-width: 600px) {
+  .banner--info {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem));
+  }
 }
 .banner--info > button {
-    background-color: #ff7779;
-    color: white;
-    text-transform: inherit;
-    margin-top: 20px;
-    font-weight: 600;
-    border-color: #ff7779;
-
+  background-color: #ff7779;
+  color: white;
+  text-transform: inherit;
+  margin-top: 20px;
+  font-weight: 600;
+  border-color: #ff7779;
 }
 .banner--info > button:hover {
-    background-color: white;
-    color: #ff7779;
-    border-color: #ff7779;   
+  background-color: white;
+  color: #ff7779;
+  border-color: #ff7779;
 }
 .banner--info > h5 {
-    margin-top: 10px;
+  margin-top: 10px;
 }

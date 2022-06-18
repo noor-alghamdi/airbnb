@@ -8,4 +8,11 @@
 .footer > p {
     padding: 5px;
     font-size: 14px;
+    text-align: center;
+   
 }
+@media screen and (min-width:600px){
+    .footer{
+      grid-template-columns:repeat(auto-fit, minmax(14rem, 16rem))
+    }
+  }

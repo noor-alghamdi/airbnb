@@ -5,6 +5,11 @@
     box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
     transition: transform 100ms ease-in;
     cursor: pointer;
+    display: flex;
+    min-width: 28rem;
+    flex-direction: column;
+    text-align: center;
+    min-width: 14rem;
   }
   
    .card:hover {
@@ -37,3 +42,4 @@
       margin-top: 8px;
       margin-bottom: 8px;
     }
+
